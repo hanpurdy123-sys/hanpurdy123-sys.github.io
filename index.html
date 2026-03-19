@@ -3,44 +3,186 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landscaping in Monroe NC | Free Quote</title>
-  <meta name="description" content="Professional landscaping in Monroe NC. Lawn care, mulch, cleanups. Call now for a free quote.">
+
+  <title>Landscaping in Monroe NC | Free Quotes</title>
+  <meta name="description" content="Professional landscaping in Monroe NC. Lawn care, mulch installation, and yard cleanups. Call now for a free quote.">
+
+  <!-- Local SEO Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Your Landscaping Company",
+    "telephone": "+1-123-456-7890",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Monroe",
+      "addressRegion": "NC"
+    },
+    "areaServed": ["Monroe NC", "Indian Trail NC", "Union County NC"]
+  }
+  </script>
 
   <style>
-    body { font-family: Arial; margin: 0; }
-    .hero { background: #f4f4f4; padding: 50px; text-align: center; }
-    .btn { background: green; color: white; padding: 12px 20px; text-decoration: none; display: inline-block; margin-top: 10px; }
-    .section { padding: 40px; max-width: 900px; margin: auto; }
-    input, textarea { width: 100%; padding: 10px; margin: 5px 0; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: white;
+      padding: 15px 20px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-weight: bold;
+    }
+
+    .phone {
+      text-decoration: none;
+      color: green;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1599940824395-2d1f17e46f1d') center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      background: green;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #f8f8f8;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .reviews {
+      background: #f4f4f4;
+    }
+
+    .form-container {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
   </style>
 </head>
 
 <body>
 
-<div class="hero">
+<!-- HEADER -->
+<header>
+  <div class="logo">Your Landscaping Co</div>
+  <a href="tel:1234567890" class="phone">Call Now</a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
   <h1>Landscaping in Monroe, NC</h1>
-  <p>Lawn care, mulch, cleanups — done right.</p>
-  <a href="tel:1234567890" class="btn">Call Now</a><br>
+  <p>Lawn care, mulch, cleanups — done right the first time.</p>
   <a href="#form" class="btn">Get Free Quote</a>
-</div>
+</section>
 
-<div class="section">
-  <h2>Services</h2>
-  <p>Lawn Maintenance • Mulch • Cleanups • Trimming</p>
-</div>
+<!-- TRUST -->
+<section class="section">
+  <p><strong>✔ Licensed & Insured | ✔ Free Estimates | ✔ Fast Response</strong></p>
+</section>
 
-<div class="section" id="form">
-  <h2>Get a Free Quote</h2>
+<!-- SERVICES -->
+<section class="section">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">Lawn Maintenance</div>
+    <div class="card">Mulch Installation</div>
+    <div class="card">Yard Cleanups</div>
+    <div class="card">Hedge Trimming</div>
+  </div>
+</section>
 
-  <form action="https://formspree.io/f/xnjgwzby" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="tel" name="phone" placeholder="Phone Number" required>
-    <textarea name="message" placeholder="What do you need?" required></textarea>
-    <button type="submit" class="btn">Request Quote</button>
-  </form>
+<!-- BEFORE AFTER -->
+<section class="section">
+  <h2>See the Difference</h2>
+  <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4" style="width:100%; border-radius:8px;">
+</section>
 
-  <p>We respond within 24 hours.</p>
-</div>
+<!-- REVIEWS -->
+<section class="section reviews">
+  <h2>What Customers Say</h2>
+  <p>"Showed up on time and did an amazing job. Highly recommend!"</p>
+</section>
+
+<!-- FORM -->
+<section class="section" id="form">
+  <h2>Get Your Free Quote</h2>
+
+  <div class="form-container">
+    <form action="https://formspree.io/f/xnjgwzby" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <textarea name="message" placeholder="What do you need?" required></textarea>
+      <button type="submit" class="btn">Request Quote</button>
+    </form>
+
+    <p>We respond within 24 hours.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Serving Monroe, Indian Trail & Union County</p>
+</footer>
 
 </body>
 </html>
